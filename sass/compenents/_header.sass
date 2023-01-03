@@ -1,0 +1,44 @@
+@use "../utils/_main" as utils
+
+.header
+    +utils.flex(center)
+    justify-content: space-between
+    padding: 20px
+    &__container
+        +utils.flex(center)
+    &__logo
+        width: 75px
+        height: 75px
+        margin-left: 100px
+        margin-right: 10px
+    &__icon-menu
+        width: 30px
+        height: 30px
+
+.list
+    +utils.flex(center)
+    font-size: 1.2rem
+    &__menu
+        +utils.flex(center)
+        gap: 0.8rem
+        margin-right: 50px
+    &__image
+        width: 21px
+        height: 21px
+
+.user
+    +utils.flex(center)
+    flex-direction: row
+    font-size: 1.2rem
+    &__menu
+        +utils.flex(center)
+        gap: 0.5rem
+        margin-right: 30px
+    & .favoris
+        border-right: 1px solid utils.$orange
+        padding-right: 20px
+    & .search
+        padding-left: 20px
+    &__image
+        width: 21px
+        height: 21px
