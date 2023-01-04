@@ -1,0 +1,19 @@
+@use "../utils/_main" as utils
+
+.home-cover
+    width: 100%
+    &__image
+        background-image: url(../../assets/images/animals.jpg)
+        height: 450px
+        +utils.flex(center)
+    &__container
+        margin-left: 150px
+        width: 450px
+        color: utils.$white
+        line-height: 1.8rem
+    &__title
+        @extend %title-1
+        line-height: 3rem
+
+.buttons__container
+    margin-top: 20px
