@@ -19,46 +19,80 @@
         <div class="header">
             <div class="header__container">
                 <img class="header__logo" src="./assets/images/logo spa.png" alt="logo de la SPA">
+                <a href="#">
                 <img class="header__icon-menu" src="./assets/icons/menu-svgrepo-com.svg" alt="icone de menu">
+                </a>
             </div>
 
-            <ul class="list">
-                <li class="list__menu">
-                    <img class="list__image" src="./assets/icons/don.svg" alt="icone pour les dons">
+            <ul class="header__list">
+                <li class="header__list__menu">
+                    <a href="#">
+                    <img class="header__list__image header__list__image--hover" src="./assets/icons/don.svg" alt="icone pour les dons">
                     Compagnon SPA
+                    </a>
                 </li>
-                <li class="list__menu">
-                    <img class="list__image" src="./assets/icons/adoption.svg" alt="icone adoption">
+                <li class="header__list__menu">
+                    <a href="#">
+                    <img class="header__list__image header__list__image--hover" src="./assets/icons/adoption.svg" alt="icone adoption">
                     J'adopte
+                    </a>
                 </li>
-                <li class="list__menu">
-                    <img class="list__image" src="./assets/icons/maltraitance.svg" alt="icone alert">
+                <li class="header__list__menu">
+                    <a href="#">
+                    <img class="header__list__image header__list__image--hover" src="./assets/icons/maltraitance.svg" alt="icone alert">
                     Je signale
+                    </a>
                 </li>
-                <li class="list__menu">
+                <li class="header__list__menu" id="showSubmenu">
+                    <a href="#">
                     Accès rapide
-                    <img class="list__image" src="./assets/icons/down-arrow-svgrepo-com (1).svg" alt="icon flèche pointant vers le bas">
+                    <img class="header__list__image" src="./assets/icons/down-arrow-svgrepo-com (1).svg" alt="icon flèche pointant vers le bas">
+                    </a>
                 </li>
             </ul>
 
-            <ul class="user">
-                <li class="user__menu">
+            <ul class="header__user">
+                <li class="header__user__menu">
+                    <a href="#">
                     Mon espace
-                    <img class="user__image" src="./assets/icons/man-user.svg" alt="icon identifiant">
+                    <img class="header__user__image" src="./assets/icons/man-user.svg" alt="icon identifiant">
+                    </a>
                 </li>
-                <li class="user__menu">
-                    <img class="user__image" src="./assets/icons/location-svgrepo-com.svg" alt="icon localisation">
+                <li class="header__user__menu">
+                    <a href="#">
+                    <img class="header__user__image" src="./assets/icons/location-svgrepo-com.svg" alt="icon localisation">
+                    </a>
                 </li>
-                <li class="user__menu favoris">
-                    <img class="user__image" src="./assets/icons/heart-svgrepo-com.svg" alt="icon favoris">
+                <li class="header__user__menu favoris">
+                    <a href="#">
+                    <img class="header__user__image" src="./assets/icons/heart-svgrepo-com.svg" alt="icon favoris">
+                    </a>
                 </li>
-                <li class="user__menu search">
-                    <img class="user__image" src="./assets/icons/loupe-svgrepo-com.svg" alt="icon recherche">
+                <li class="header__user__menu search">
+                    <a href="#">
+                    <img class="header__user__image" src="./assets/icons/loupe-svgrepo-com.svg" alt="icon recherche">
+                    </a>
                 </li>
             </ul>
-
         </div>
     </header>
+    <div class="header__submenu" id="submenu">
+        <ul>
+            <li class="header__submenu--menu">Je souhaite adopter un animal</li>
+            <li class="header__submenu--menu">Je souhaite devenir bénévole</li>
+            <li class="header__submenu--menu">Je dois me séparer de mon animal</li>
+        </ul>
+        <ul>
+            <li class="header__submenu--menu">Je veux signaler une maltraitance</li>
+            <li class="header__submenu--menu">Boutique solidaire</li>
+            <li class="header__submenu--menu">je découvre toudou</li>
+        </ul>
+        <ul>
+            <li class="header__submenu--menu">Les implantations de la SPA</li>
+            <li class="header__submenu--menu">Je veux soutenir la SPA</li>
+            <li class="header__submenu--menu">J'ai besoin d'aide</li>
+        </ul>
+    </div>
 
     <main>
         <div class="home-cover">
@@ -76,5 +110,7 @@
             </div>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

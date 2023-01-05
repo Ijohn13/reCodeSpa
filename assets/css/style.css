@@ -38,45 +38,56 @@ ul {
   width: 30px;
   height: 30px;
 }
-
-.list {
+.header__list {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
 }
-.list__menu {
+.header__list__menu {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-right: 50px;
 }
-.list__image {
+.header__list__image {
   width: 21px;
   height: 21px;
 }
-
-.user {
+.header__list__image--hover:hover {
+  transform: scale(1.25);
+}
+.header__user {
   display: flex;
   align-items: center;
   flex-direction: row;
   font-size: 1.2rem;
 }
-.user__menu {
+.header__user__menu {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-right: 30px;
 }
-.user .favoris {
+.header__user .favoris {
   border-right: 1px solid #eb651c;
   padding-right: 20px;
 }
-.user .search {
+.header__user .search {
   padding-left: 20px;
 }
-.user__image {
+.header__user__image {
   width: 21px;
   height: 21px;
+}
+.header__submenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150px;
+  display: none;
+}
+.header__submenu--menu {
+  padding: 10px;
 }
 
 .home-cover {
