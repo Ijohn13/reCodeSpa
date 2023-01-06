@@ -20,7 +20,7 @@
             <div class="header__container">
                 <img class="header__logo" src="./assets/images/logo spa.png" alt="logo de la SPA">
                 <a href="#">
-                <img class="header__icon-menu" src="./assets/icons/menu-svgrepo-com.svg" alt="icone de menu">
+                <img class="header__icon-menu" id="icon-menu" data-cibleidnavbar = "navbarSite" src="./assets/icons/menu-svgrepo-com.svg" alt="icone de menu">
                 </a>
             </div>
 
@@ -76,21 +76,48 @@
             </ul>
         </div>
     </header>
-    <div class="header__submenu" id="submenu">
+    <div class="submenu__logo" id='submenu-logo'>
+        <ul class="submenu__logo__container">
+            <li class="submenu__logo__container--menu">ACCUEIL</li>
+            <li class="submenu__logo__container--menu">LA SPA</li>
+            <li class="submenu__logo__container--menu">MISSIONS</li>
+            <li class="submenu__logo__container--menu">ADOPTER</li>
+            <li class="submenu__logo__container--menu">AGIR</li>
+            <li class="submenu__logo__container--menu">MALTRAITANCE</li>
+        </ul>
+        <ul class="submenu__logo__box">
+            <li>
+                <img class="submenu__logo__box--icon" src="./assets/icons/social-facebook-svgrepo-com.svg" alt="logo facebook">
+            </li>
+            <li>
+                <img class="submenu__logo__box--icon" src="./assets/icons/social-twitter-svgrepo-com.svg" alt="logo twitter">
+            </li>
+            <li>
+                <img class="submenu__logo__box--icon" src="./assets/icons/social-instagram-svgrepo-com.svg" alt="logo instagram">
+            </li>
+            <li>
+                <img class="submenu__logo__box--icon" src="./assets/icons/social-youtube-svgrepo-com.svg" alt="logo youtube">
+            </li>
+            <li>
+                <img class="submenu__logo__box--icon" src="./assets/icons/social-linkedin-svgrepo-com.svg" alt="logo linkedin">
+            </li>
+        </ul>
+    </div>
+    <div class="submenu__quick" id="submenu">
         <ul>
-            <li class="header__submenu--menu">Je souhaite adopter un animal</li>
-            <li class="header__submenu--menu">Je souhaite devenir bénévole</li>
-            <li class="header__submenu--menu">Je dois me séparer de mon animal</li>
+            <li class="submenu__quick--menu">Je souhaite adopter un animal</li>
+            <li class="submenu__quick--menu">Je souhaite devenir bénévole</li>
+            <li class="submenu__quick--menu">Je dois me séparer de mon animal</li>
         </ul>
         <ul>
-            <li class="header__submenu--menu">Je veux signaler une maltraitance</li>
-            <li class="header__submenu--menu">Boutique solidaire</li>
-            <li class="header__submenu--menu">je découvre toudou</li>
+            <li class="submenu__quick--menu">Je veux signaler une maltraitance</li>
+            <li class="submenu__quick--menu">Boutique solidaire</li>
+            <li class="submenu__quick--menu">je découvre toudou</li>
         </ul>
         <ul>
-            <li class="header__submenu--menu">Les implantations de la SPA</li>
-            <li class="header__submenu--menu">Je veux soutenir la SPA</li>
-            <li class="header__submenu--menu">J'ai besoin d'aide</li>
+            <li class="submenu__quick--menu">Les implantations de la SPA</li>
+            <li class="submenu__quick--menu">Je veux soutenir la SPA</li>
+            <li class="submenu__quick--menu">J'ai besoin d'aide</li>
         </ul>
     </div>
 
@@ -110,6 +137,7 @@
             </div>
         </div>
     </main>
+
 
     <script src="./script.js"></script>
 </body>

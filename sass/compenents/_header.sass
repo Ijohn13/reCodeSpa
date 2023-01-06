@@ -42,10 +42,50 @@
         &__image
             width: 21px
             height: 21px
-    &__submenu
+
+.submenu__quick
+    +utils.flex(center)
+    justify-content: space-evenly
+    height: 150px
+    display: none
+    animation-name: animation-div-submenu
+    animation-duration: 1s
+    &--menu
+        animation-name: animation-submenu
+        animation-duration: 3s
+        padding: 10px
+
+.submenu__logo
+    display: none
+    padding: 20px
+    justify-content: space-between
+    &__container
         +utils.flex(center)
-        justify-content: space-evenly
-        height: 150px
-        display: none
+        justify-content: space-around
+        flex-grow: 3
         &--menu
+            color: utils.$orange
+            padding: 5px
+    &__box
+        +utils.flex(center)
+        justify-content: center
+        flex-grow: 1
+        &--icon
+            width: 21px
+            height: 21px
             padding: 10px
+
+.show_menu
+    display: flex
+
+@keyframes animation-submenu
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes animation-div-submenu
+    from
+        height: 0px
+    to
+        height: 150px

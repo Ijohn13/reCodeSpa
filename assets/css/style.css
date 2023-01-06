@@ -79,17 +79,90 @@ ul {
   width: 21px;
   height: 21px;
 }
-.header__submenu {
+
+.submenu__quick {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 150px;
   display: none;
+  -webkit-animation-name: animation-div-submenu;
+          animation-name: animation-div-submenu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-.header__submenu--menu {
+.submenu__quick--menu {
+  -webkit-animation-name: animation-submenu;
+          animation-name: animation-submenu;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   padding: 10px;
 }
 
+.submenu__logo {
+  display: none;
+  padding: 20px;
+  justify-content: space-between;
+}
+.submenu__logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 3;
+}
+.submenu__logo__container--menu {
+  color: #eb651c;
+  padding: 5px;
+}
+.submenu__logo__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.submenu__logo__box--icon {
+  width: 21px;
+  height: 21px;
+  padding: 10px;
+}
+
+.show_menu {
+  display: flex;
+}
+
+@-webkit-keyframes animation-submenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-submenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animation-div-submenu {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 150px;
+  }
+}
+@keyframes animation-div-submenu {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 150px;
+  }
+}
 .home-cover {
   width: 100%;
 }
