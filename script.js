@@ -11,8 +11,10 @@ showSubmenu.addEventListener('mouseover', () => {
 })
 
 iconMenu.addEventListener('click', () => {
-    submenuLogo.style.display = 'flex'
-    iconMenu.addEventListener('click', () => {
-        submenuLogo.style.display = 'none'
-    })
+    submenuLogo.classList.toggle('show_menu');
 })
+
+
+// iconMenu.addEventListener('click', () => {
+//     submenuLogo.style.display = 'none';
+// })

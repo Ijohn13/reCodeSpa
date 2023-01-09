@@ -1,3 +1,8 @@
+.home-cover__title, .form__title {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +13,32 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  cursor: pointer;
+}
 
 ul {
   list-style: none;
 }
 
-.home-cover__title {
-  font-family: "Amatic SC", cursive;
-  font-size: 2.5rem;
+button {
+  border: none;
+  background: inherit;
+}
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, select {
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #eb651c;
+  background: rgba(254, 252, 252, 0.1);
 }
 
 .header {
@@ -181,9 +204,71 @@ ul {
 .home-cover__title {
   line-height: 3rem;
 }
-
-.buttons__container {
+.home-cover__buttons {
   margin-top: 20px;
+}
+
+.join {
+  display: flex;
+  justify-content: center;
+  background: rgba(254, 231, 240, 0.3960784314);
+}
+.join__text {
+  padding: 50px;
+}
+.join__text--title {
+  margin-bottom: 25px;
+}
+.join__text--para {
+  line-height: 1.5rem;
+}
+.join__button {
+  margin-top: 50px;
+}
+.join__image {
+  padding: 50px;
+  width: 700px;
+}
+
+.suscribe {
+  display: flex;
+  justify-content: center;
+}
+.suscribe__image {
+  width: 700px;
+  padding: 50px;
+}
+.suscribe__text {
+  padding: 50px;
+}
+.suscribe__text--title {
+  margin-bottom: 25px;
+}
+.suscribe__text--para {
+  line-height: 1.5rem;
+}
+.suscribe__button {
+  margin-top: 50px;
+}
+
+.form {
+  text-align: center;
+  background: rgba(254, 231, 240, 0.3960784314);
+}
+.form__container {
+  padding: 100px;
+}
+.form__title {
+  line-height: 5rem;
+  margin-bottom: 25px;
+}
+.form__soustitle {
+  color: #eb651c;
+}
+.form__geo {
+  margin-left: 263px;
+  line-height: 3rem;
+  font-size: 0.8rem;
 }
 
 .button {
@@ -197,5 +282,19 @@ ul {
   background-color: rgba(254, 252, 252, 0.1);
   border: 2px solid #fff;
   color: #fff;
+  transition: 1s ease-out;
+}
+
+.button-orange {
+  padding: 15px 25px 15px 25px;
+  margin-right: 10px;
+  border-radius: 100px;
+  background: #eb651c;
+  color: #fff;
+}
+.button-orange:hover {
+  background-color: rgba(254, 252, 252, 0.1);
+  border: 2px solid #eb651c;
+  color: #eb651c;
   transition: 1s ease-out;
 }/*# sourceMappingURL=style.css.map */

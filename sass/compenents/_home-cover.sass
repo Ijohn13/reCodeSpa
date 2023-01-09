@@ -14,6 +14,53 @@
     &__title
         @extend %title-1
         line-height: 3rem
+    &__buttons
+        margin-top: 20px
 
-.buttons__container
-    margin-top: 20px
+.join
+    display: flex
+    justify-content: center
+    background: utils.$background-container
+    &__text
+        padding: 50px
+        &--title
+            margin-bottom: 25px
+        &--para
+            line-height: 1.5rem
+    &__button
+        margin-top: 50px
+    &__image
+        padding: 50px
+        width: 700px
+
+.suscribe
+    display: flex
+    justify-content: center
+    &__image
+        width: 700px
+        padding: 50px
+    &__text
+        padding: 50px
+        &--title
+            margin-bottom: 25px
+        &--para
+            line-height: 1.5rem
+    &__button
+        margin-top: 50px
+
+.form
+    text-align: center
+    background: utils.$background-container
+    &__container
+        padding: 100px
+
+    &__title
+        @extend %title-1
+        line-height: 5rem
+        margin-bottom: 25px
+    &__soustitle
+        color: utils.$orange
+    &__geo
+        margin-left: 263px
+        line-height: 3rem
+        font-size: 0.8rem

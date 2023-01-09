@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <!-- <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
+    > -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Asap:ital,wght@1,600&family=Dancing+Script&family=Dongle:wght@300&family=Lato:wght@300&family=Nanum+Gothic&family=Poppins:ital,wght@1,300&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
@@ -19,9 +20,9 @@
         <div class="header">
             <div class="header__container">
                 <img class="header__logo" src="./assets/images/logo spa.png" alt="logo de la SPA">
-                <a href="#">
-                <img class="header__icon-menu" id="icon-menu" data-cibleidnavbar = "navbarSite" src="./assets/icons/menu-svgrepo-com.svg" alt="icone de menu">
-                </a>
+                <button>
+                <img class="header__icon-menu" id="icon-menu" src="./assets/icons/menu-svgrepo-com.svg" alt="icone de menu">
+                </button>
             </div>
 
             <ul class="header__list">
@@ -76,7 +77,7 @@
             </ul>
         </div>
     </header>
-    <div class="submenu__logo" id='submenu-logo'>
+    <div class="submenu__logo" id='submenu-logo' autofocused=false >
         <ul class="submenu__logo__container">
             <li class="submenu__logo__container--menu">ACCUEIL</li>
             <li class="submenu__logo__container--menu">LA SPA</li>
@@ -122,22 +123,86 @@
     </div>
 
     <main>
-        <div class="home-cover">
+
+        <section class="home-cover">
             <div class="home-cover__image">
                 <div class="home-cover__container">
                     <h1 class="home-cover__title">DONNONS-LEUR AUTANT<br>QU'ILS NOUS APPORTENT</h1>
-                    <p class="home-cover__para">Des milliers d'animaux sont à l'adoption dans nos refuges, venez<br>les 
+                    <p>Des milliers d'animaux sont à l'adoption dans nos refuges, venez<br>les 
                         rencontrer et, chaque jour, soutenez nos missions de protection<br>animale !
                     </p>
-                    <div class="buttons__container">
+                    <div class="home-cover__buttons">
                         <a href="#" class="button">Je donne</a>
                         <a href="#" class="button">J'adopte</a>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <article class="join">
+            <div class="join__text">
+                <h2 class="join__text--title">Adhérez dès aujourd'hui pour faire<br> entendre leurs voix</h2>
+                <p class="join__text--para">
+                        Ensemble, nous pouvons être fiers d'avoir fait progresser <br>la cause animale en
+                        2022. En 2023, redoublons de <br>détermination pour les défis à venir ! Pensez
+                        à (ré)adhérez <br>dès aujourd'hui pour porter la voix des miliers d'animaux <br>que nous 
+                        recueillons dans nos refuges.
+                </p>
+                <div class="join__button">
+                    <a href="#" class="button-orange">J'adhère</a>
+                </div>
+            </div>
+            <div class="join__image">
+                <img src="./assets/images/childWithDog.jpg" alt="une petite fille avec un chien">
+            </div>
+        </article>
+        
+        <article class="suscribe">
+            <div class="suscribe__image">
+                <img src="./assets/images/womanWithDog.jpg" alt="une femme qui fait un calin à son chien">
+            </div>
+            <div class="suscribe__text">
+                <h2 class="suscribe__text--title">Abonnez-les à l'amour, devenez<br> Compagnon SPA !</h2>
+                <p class="suscribe__text--para">
+                    Les animaux nous sont si fidèle. Témoignez-leur, vous<br> aussi, votre amour en les 
+                    soutenant jour après jour.
+                </p>
+                <br>
+                <p class="suscribe__text--para">
+                    Aidez-nous à reconstruire des vies brisées <b>en faisant un<br> don tous les mois,</b>
+                    du montant de votre choix. Devenez<br> ainsi <b>Compagnon SPA</b> et, grâce à votre
+                    don régulier,<br> accompagnez les animaux victimes de spires violences,<br> redonnez-leur 
+                    confiance en l'Homme et l'envie d'être de<br> nouveau aimés. Offrez-leur ainsi les 
+                    meilleurs soins pour<br> se remettre sur pattes avant d'être adoptés par une<br> famille
+                    pour la vie.
+                </p>
+                <div class="suscribe__button">
+                    <a href="#" class="button-orange">Je deviens Compagnon SPA</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="form">
+            <div class="form__container">
+                <h3 class="form__title">ACTUELLEMENT<br>
+                <span class="form__soustitle">3483 ANIMAUX</span> À L'OPTION</h3>
+                Rechercher un(e)
+                <select name="race" id="race">
+                    <option value="Chien">chien</option>
+                    <option value="Bovin">bovin</option>
+                    <option value="Chat">chat</option>
+                    <option value="Autre">autre</option>
+                </select>
+                à 
+                <input type="text" value="Ville ou CP">
+                <span class="form__icon"></span><br>
+                <span class="form__geo">
+                    Me géolocaliser
+                </span>
+            </div>
+
         </div>
     </main>
-
 
     <script src="./script.js"></script>
 </body>

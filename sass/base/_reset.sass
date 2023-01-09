@@ -1,3 +1,5 @@
+@use "../utils/_main" as utils
+
 *
     margin: 0
     padding: 0
@@ -6,6 +8,24 @@
 a
     text-decoration: none
     color: inherit
+    &:hover
+        cursor: pointer
 
 ul
     list-style: none
+
+button
+    border: none
+    background: inherit
+    &:hover
+        cursor: pointer
+
+img
+    max-width: 100%
+    height: auto
+
+input, select
+    width: 150px
+    border: none
+    border-bottom: 1px solid utils.$orange
+    background: rgba(254, 252, 252, 0.1)
