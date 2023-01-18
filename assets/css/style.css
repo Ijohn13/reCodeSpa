@@ -270,6 +270,16 @@ input, select {
   line-height: 3rem;
   font-size: 0.8rem;
 }
+.form__robot {
+  margin-top: 20px;
+}
+.form__checkbox {
+  width: 13px;
+  margin-right: 5px;
+}
+.form__label {
+  margin-right: 25px;
+}
 
 .button {
   padding: 10px 30px 10px 30px;

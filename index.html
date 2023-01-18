@@ -195,10 +195,18 @@
                 </select>
                 à 
                 <input type="text" value="Ville ou CP">
-                <span class="form__icon"></span><br>
-                <span class="form__geo">
+                <span class="form__icon">
+                    <img src="./assets/icons/loupe-svgrepo-com.svg" alt="icon de recherche">
+                </span><br>
+                <a class="form__geo" href="#">
+                    <img class="form__geo--icon" src="./assets/icons/geolocaliser.svg" alt="icon me géolocaliser">
                     Me géolocaliser
-                </span>
+                </a>
+                <div class="form__robot">
+                    <input class="form__checkbox" type="checkbox" id="checkbox" >
+                    <label class="form__label" for="checkbox"> Je ne suis pas un robot</label>
+                    <a href="#" class="button-orange">OK</a>
+                </div>
             </div>
 
         </div>
